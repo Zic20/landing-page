@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    flex-direction: column;
+}
+
+#navbar .logo {
+    margin-bottom: 0.75rem;
+}
+
+/* Showcase */
+#showcase {
+    height: 80vh;
+    padding: 0;
+    background: url('../img/milad-fakurian-U8BZ0cFrm7Q-unsplash.jpg') no-repeat center center/cover;
+}
+
+#showcase .showcase-content {
+    padding-top: 0.75rem;
+    height: 100%;
+    width: 100%;
+    color: #F0EDEE;
+    /* overlay */
+    background: rgba(0, 0, 0, 0.5)
+}
+
+#showcase .showcase-img {
+    display: none;
+}
+
+.showcase-info {
+    text-align: center;
+}
+
+.showcase-info h1 {
+    font-size: 1.75rem;
+}
+
+.showcase-info p {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+
+
+/* About */
+#about {
+    min-height: 600px;
+    padding:0.5rem;
+}
+
+#about .about-img {
+    display: none;
+}
+
+#about .about-info {
+    height: 80%;
+    width: 100%;
+    color: black;
+    padding: 2rem 2rem;
+    
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.1rem;
+    padding: 0.5rem 2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Features */
+#features {
+    min-height: 700px;
+    padding: 2rem;
+}
+
+#features .items {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+#features .items .item {
+    padding: 2rem;
+    max-width: 80%;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* Section: Clients */
+
+#clients {
+    height: 250px;
+    width: 100%;
+}
+
+
+#clients #clients-logo .client {
+    padding: 0.5rem;
+}
+
+#clients .client:nth-child(4){
+    display:none;
+}
+
+#clients .client img {
+    width: 70px;
+    height: 70px;
+    padding:0.3rem;
+}
+
+/* Contact Us */
+#contact {
+    height: 500px;
+}
+#contact #contact-form{
+    padding: 2rem;
+}
+
+#contact #map {
+    display: none;
+}
+
+#contact #contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact #contact-form label {
+    text-align: left;
+    display: block;
+}
+
+#contact #contact-form 
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border:none;
+}

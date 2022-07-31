@@ -1,0 +1,95 @@
+/* Showcase */
+#showcase {
+    height: 90vh;
+    background: url('../img/milad-fakurian-U8BZ0cFrm7Q-unsplash.jpg') no-repeat center center/cover;
+    padding: 1.75rem;
+    align-items: center;
+    display: flex;
+}
+
+#showcase .showcase-img {
+    display: none;
+}
+
+.showcase-info {
+    color: white;
+    text-align: center;
+}
+
+/* Section: About */
+
+#about {
+    color: whitesmoke; 
+    padding: 0;
+    height: 600px;
+}
+
+#about .about-img {
+    display: none;
+}
+
+#about .about-info {
+    padding: 4rem;
+}
+
+/* Section: Features */
+#features {
+    /* background: #e5e9ed; */
+    padding: 2rem;
+    height: 550px;
+}
+
+#features .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#features .items .item {
+    line-height: 1.5;
+}
+
+
+/* Section: Clients */
+#clients {
+    height: 250px;
+    width: 100%;
+}
+
+#clients #clients-logo {
+    padding: 0.5rem;
+}
+
+#clients #clients-logo .client {
+    padding: 1rem;
+}
+
+#clients .client img {
+    width: 150px;
+    height: 150px;
+    padding: 0.3rem;
+}
+
+/* Section: Contact */
+
+#contact {
+    flex-direction: column;
+    height: 500px;
+}
+
+#contact #contact-form{
+    padding: 2rem;
+}
+
+#contact #map {
+    display: none;
+}
+
+/* footer */
+#footer {
+    height: 70px;
+    padding: 2rem;
+    background: black;
+    color: white;
+}

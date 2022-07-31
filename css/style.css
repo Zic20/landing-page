@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,700;1,900&family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,500&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+:root {
+    /* --primary-color: #F0EDEE; */
+    --primary-color: #FEF9EF;
+    --secondary-color: #f1f0ebf1;
+    /* --secondary-color: #e5e9ed; */
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    /* background: #F2F4FF; */
+    background: var(--primary-color);
+    font-family: 'Lato', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+/* Utilities */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.l-heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.lead {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom:1rem;
+}
+
+.btn {
+    background: #2E4052;
+    border:none;
+    border-radius: 5px;
+    color:#F2F4FF;
+    padding:1rem;
+}
+
+.btn-rounded {
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-rounded:hover {
+    border: 2px solid black;
+    color: black;
+    background: var(--primary-color);
+    width: 500px;    
+}
+
+.btn-dark {
+    background: black;
+    color:white;
+}
+
+.underline {
+    border-bottom: 1px solid black;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+/* Navbar */
+#navbar {
+    display: flex;
+    position: sticky;
+    top:0;
+    padding: 1.5rem;
+    /* color: var(--primary-color); */
+    /* background: black; */
+    color: black;
+    background: var(--primary-color);
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar h1 {
+    padding: 0;
+}
+
+#navbar ul li {
+    padding: 0 0.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+#navbar ul li a {
+    color: black;
+    /* color:var(--primary-color); */
+}
+
+/* Showcase */
+#showcase {
+    height: 88vh;
+    background: var(--secondary-color);
+    padding:1.75rem;
+}
+#showcase .showcase-content {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:3rem;
+}
+
+#showcase .showcase-img img{
+    height:95%;
+    width: 95%;
+}
+
+.showcase-info {
+    padding: 1.75rem;
+    text-align:left;
+}
+
+.showcase-info h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.showcase-info p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.section h1 {
+    font-size: rem;
+}
+
+/* Section: About */
+
+#about {
+    height: 80vh;
+    color:whitesmoke;
+    padding-top:3.5rem;
+}
+
+
+#about .about-info {
+    height: 100%;
+    width: 100%;
+    color: black;
+    padding: 5rem 5rem 0;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    padding-left: 2rem;
+    text-transform: uppercase;
+}
+
+#about p {
+    font-size: 1.1rem;
+    padding: 2rem 4rem 2rem 2rem;
+    text-align: left;
+    line-height: 2;
+}
+
+/* Section: Features */
+#features {
+    /* background: var(--primary-color); */
+    background: linear-gradient(var(--primary-color)0 50%,var(--secondary-color)50% 100%);
+    padding: 1rem;
+    padding: 5rem 2rem;
+    /* height: 400px; */
+    height: 90vh;
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#features .items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+#features .items .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 250px;
+    /* max-width: 40%; */
+    max-height: 350px;
+    /* height: 60%; */
+    margin:auto 2%;
+    border: none;
+    border-radius: 4px;
+    line-height: 1.5;
+    transition: all 0.5s ease-in-out;
+    background: #FDFFF7;
+    box-shadow: -9px -6px 16px -9px rgba(0,0,0,0.1),9px 9px 53px -10px rgba(0,0,0,0.1);
+}
+
+#features .items .item .material-icons {
+    background: var(--secondary-color);
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+}
+
+
+/* Section: Clients */
+
+#clients {
+    height: 300px;
+    padding: 2rem;
+    margin-bottom:1.5rem;
+}
+
+#clients #clients-logo {
+    width: 80%;
+    margin:auto;
+    display:flex;
+    flex: 1;
+    padding: 2rem 5rem;
+    justify-content: center;
+}
+
+#clients #clients-logo .client {
+    padding: 2rem;
+}
+
+#clients .client img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Section: Contact */
+
+#contact{
+    display: flex;
+    height: 90vh;
+}
+
+#contact #contact-form{
+    padding: 2rem;
+    flex:1;
+    /* background:var(--secondary-color); */
+    background: rgb(43, 42, 42);
+    color: whitesmoke;
+}
+
+#contact #map {
+    flex:2;
+    background-color:#333 !important
+}
+
+#contact #contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact #contact-form label {
+    text-align: left;
+    display: block;
+}
+
+#contact #contact-form 
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border:none;
+}
+
+/* footer */
+#footer {
+    height: 70px;
+    padding: 2rem;
+    background: black;
+    color: white;
+}
+
+.fi {
+    font-size: 2.75rem;
+    /* color: #30BCED; */
+}
+
+
+
+
+
