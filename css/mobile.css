@@ -80,7 +80,8 @@
 /* Features */
 #features {
     min-height: 850x;
-    padding: 2rem;
+    width: 100%;
+    padding: 0.5rem;
 }
 
 #features .items {
