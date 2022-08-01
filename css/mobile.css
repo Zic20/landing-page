@@ -58,7 +58,7 @@
 }
 
 #about .about-info {
-    min-height: 80%;
+    min-height: 90%;
     width: 100%;
     color: black;
     padding: 2rem 2rem;
@@ -79,7 +79,7 @@
 
 /* Features */
 #features {
-    min-height: 700px;
+    min-height: 850x;
     padding: 2rem;
 }
 
