@@ -20,7 +20,7 @@
 }
 
 #showcase .showcase-content {
-    padding-top: 0.75rem;
+    padding: 0.75rem;
     height: 100%;
     width: 100%;
     color: #F0EDEE;
@@ -42,14 +42,15 @@
 
 .showcase-info p {
     line-height: 1.5;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 
 
 /* About */
 #about {
-    min-height: 600px;
+    min-height: 500px;
+    height: 600px;
     padding:0.5rem;
 }
 
@@ -58,11 +59,16 @@
 }
 
 #about .about-info {
-    height: 80%;
+    height: 90%;
     width: 100%;
     color: black;
     padding: 2rem 2rem;
     
+}
+
+#about .about-info .container {
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 #about h2 {
@@ -72,22 +78,24 @@
 
 #about p {
     font-size: 1.1rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
     line-height: 1.5;
     text-align: center;
+    overflow: hidden;
 }
 
 /* Features */
 #features {
-    min-height: 700px;
-    padding: 2rem;
+    height: 1000px;
+    max-height: 700px;
+    padding: 0.5rem;
 }
 
 #features .items {
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    margin: 2rem auto;
+    width: 90%;
+    margin: 1rem auto;
 }
 
 #features .items .item {
