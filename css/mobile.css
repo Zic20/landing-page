@@ -58,7 +58,7 @@
 }
 
 #about .about-info {
-    height: 80%;
+    min-height: 80%;
     width: 100%;
     color: black;
     padding: 2rem 2rem;
