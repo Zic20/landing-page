@@ -164,7 +164,7 @@ a {
 /* Section: About */
 
 #about {
-    height: 80vh;
+    min-height: 80vh;
     color:whitesmoke;
     padding-top:3.5rem;
 }
