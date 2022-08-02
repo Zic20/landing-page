@@ -99,11 +99,26 @@
 }
 
 #features .items .item {
+    flex-direction: column;
     padding: 2rem;
     max-width: 80%;
     margin-bottom: 2rem;
     line-height: 1.5;
 }
+
+#features .items .item .img,
+#features .items .item .content{
+    width: 100%;
+    text-align: center;
+}
+
+#features .items .item .img img,
+#features .items .item .img svg {
+    width: 100px;
+    height: 100px;
+}
+
+
 
 /* Section: Clients */
 

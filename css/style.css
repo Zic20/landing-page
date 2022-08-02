@@ -226,10 +226,11 @@ a {
 
 #features .items .item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 2rem;
-    max-width: 250px;
+    align-items: center;
+    padding: 1.5rem;
+    max-width: 500px;
     /* max-width: 40%; */
     max-height: 350px;
     /* height: 60%; */
@@ -241,6 +242,25 @@ a {
     background: #FDFFF7;
     box-shadow: -9px -6px 16px -9px rgba(0,0,0,0.1),9px 9px 53px -10px rgba(0,0,0,0.1);
 }
+
+#features .items .item .img,
+#features .items .item .content{
+    flex:1;
+    width: 50%;
+    text-align: center;
+}
+
+#features .items .item .img img {
+    width: 100%;
+    height: 100%;
+}
+
+#features .items .item .img svg {
+    width: 100%;
+    height: 226px;
+}
+
+
 
 #features .items .item .material-icons {
     background: var(--secondary-color);
