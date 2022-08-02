@@ -136,14 +136,24 @@ a {
     padding:3rem;
 }
 
-#showcase .showcase-img img{
+#showcase .showcase-img img, 
+#showcase .showcase-img svg{
     height:95%;
     width: 95%;
 }
 
-.showcase-info {
-    padding: 1.75rem;
+#showcase .showcase-img svg{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.showcase-info,
+.showcase-img {
+    padding: 1.5rem;
     text-align:left;
+    flex: 1;
 }
 
 .showcase-info h1 {
