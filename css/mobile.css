@@ -89,7 +89,9 @@
     height: 1000px;
     height: 600px;
     padding: 0.5rem;
+    overflow-x: hidden;
 }
+
 
 #features .items {
     flex-direction: row;
@@ -97,6 +99,7 @@
     width: 90%;
     margin: 1rem auto;
     position: relative;
+    /* overflow-x: hidden; */
 }
 
 #features .items .item {
@@ -104,17 +107,17 @@
     height: 500px;
     padding: 2rem;
     max-width: 80%;
-    display: none;
     margin-bottom: 2rem;
-    transform: translateX(100%);
+    transform: translateX(200%);
     line-height: 1.5;
     position: absolute;
+    transition: transform 1.9s ease-in-out;
+    
 }
 
 #features .items .item.active{
-    display: flex;
+    display: block;
     transform: translateX(0);
-    transition: all 0.5s ease-in-out;
 }
 
 #features .items .slider {

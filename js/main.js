@@ -1,6 +1,6 @@
 let map;
 let marker;
-const features = document.querySelectorAll('.item');
+const features = document.querySelectorAll(".item");
 let activeFeature = 0;
 
 function initMap() {
@@ -47,33 +47,36 @@ $("#navbar a, .btn").on("click", function (event) {
   }
 });
 
-
-if(document.getElementById('slider-right')){
-  document.getElementById('slider-right').addEventListener('click',()=>{
-    if(activeFeature >= features.length -1){
+if (document.getElementById("slider-right")) {
+  document.getElementById("slider-right").addEventListener("click", () => {
+    if (activeFeature >= features.length - 1) {
       activeFeature = 0;
-    }else{
+    } else {
       activeFeature++;
     }
-    features.forEach(feature =>{
-      feature.classList.remove('active');
-    })
+    features.forEach((feature) => {
+      feature.classList.remove("active");
+    });
 
-    features[activeFeature].classList.add('active');
-  })
+    features[activeFeature].classList.add("active");
+  });
 }
 
-if(document.getElementById('slider-left')){
-  document.getElementById('slider-left').addEventListener('click',()=>{
-    if(activeFeature === 0){
+if (document.getElementById("slider-left")) {
+  document.getElementById("slider-left").addEventListener("click", () => {
+    // features[activeFeature].style.transform = "translateX(-200%)";
+    
+
+    if (activeFeature === 0) {
       activeFeature = 1;
-    }else{
+    } else {
       activeFeature--;
     }
-    features.forEach(feature =>{
-      feature.classList.remove('active');
-    })
-
-    features[activeFeature].classList.add('active');
-  })
+    
+    features.forEach((feature) => {
+      feature.classList.remove("active");
+    });
+    features[activeFeature].classList.add("active");
+    // features[activeFeature].style.transform = "translateX(0)";
+  });
 }
