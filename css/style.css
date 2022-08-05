@@ -203,11 +203,9 @@ a {
 
 /* Section: Features */
 #features {
-    /* background: var(--primary-color); */
     background: linear-gradient(var(--primary-color)0 50%,var(--secondary-color)50% 100%);
     padding: 1rem;
     padding: 5rem 2rem;
-    /* height: 400px; */
     height: 90vh;
 }
 
@@ -234,6 +232,7 @@ a {
     /* max-width: 40%; */
     max-height: 350px;
     /* height: 60%; */
+    top: 20%;
     margin:auto 2%;
     border: none;
     border-radius: 4px;
@@ -242,6 +241,16 @@ a {
     background: #FDFFF7;
     box-shadow: -9px -6px 16px -9px rgba(0,0,0,0.1),9px 9px 53px -10px rgba(0,0,0,0.1);
 }
+
+#features .items .slider {
+    display:none;
+    transition: all 0.8s ease-in-out;
+}
+#features .items .slider:hover {
+    background: black;
+}
+
+
 
 #features .items .item .img,
 #features .items .item .content{

@@ -1,19 +1,9 @@
 /* Showcase */
 #showcase {
-    height: 90vh;
-    background: url('../img/milad-fakurian-U8BZ0cFrm7Q-unsplash.jpg') no-repeat center center/cover;
+    height: 50vh;
     padding: 1.75rem;
     align-items: center;
     display: flex;
-}
-
-#showcase .showcase-img {
-    display: none;
-}
-
-.showcase-info {
-    color: white;
-    text-align: center;
 }
 
 /* Section: About */

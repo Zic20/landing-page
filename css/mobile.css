@@ -14,7 +14,7 @@
 
 /* Showcase */
 #showcase {
-    height: 80vh;
+    height: 88vh;
     padding: 0;
     background: url('../img/milad-fakurian-U8BZ0cFrm7Q-unsplash.jpg') no-repeat center center/cover;
 }
@@ -87,28 +87,61 @@
 /* Features */
 #features {
     height: 1000px;
-    max-height: 700px;
+    height: 600px;
     padding: 0.5rem;
 }
 
 #features .items {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 90%;
     margin: 1rem auto;
+    position: relative;
 }
 
 #features .items .item {
     flex-direction: column;
-    padding: 2rem;
+    height: 500px;
+    padding: 4rem;
     max-width: 80%;
+    display: none;
     margin-bottom: 2rem;
+    transform: translateX(100%);
     line-height: 1.5;
+    position: absolute;
 }
+
+#features .items .item.active{
+    display: flex;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+#features .items .slider {
+    display: inline-block;
+    background: rgba(0, 0, 0,0.2);
+    border:none;
+    color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 360px;
+}
+
+#features .items .slider#slider-left{
+    left: 200px;
+}
+
+#features .items .slider#slider-right{
+    left: 250px;
+}
+
 
 #features .items .item .img,
 #features .items .item .content{
     width: 100%;
+    
     text-align: center;
 }
 

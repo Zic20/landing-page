@@ -1,5 +1,8 @@
 let map;
 let marker;
+const features = document.querySelectorAll('.item');
+let activeFeature = 0;
+
 function initMap() {
   // my location
   const location = { lat: 6.2692796412937986, lng: -10.724455078483835 };
@@ -43,3 +46,34 @@ $("#navbar a, .btn").on("click", function (event) {
     );
   }
 });
+
+
+if(document.getElementById('slider-right')){
+  document.getElementById('slider-right').addEventListener('click',()=>{
+    if(activeFeature >= features.length -1){
+      activeFeature = 0;
+    }else{
+      activeFeature++;
+    }
+    features.forEach(feature =>{
+      feature.classList.remove('active');
+    })
+
+    features[activeFeature].classList.add('active');
+  })
+}
+
+if(document.getElementById('slider-left')){
+  document.getElementById('slider-left').addEventListener('click',()=>{
+    if(activeFeature === 0){
+      activeFeature = 1;
+    }else{
+      activeFeature--;
+    }
+    features.forEach(feature =>{
+      feature.classList.remove('active');
+    })
+
+    features[activeFeature].classList.add('active');
+  })
+}
