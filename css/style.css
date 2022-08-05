@@ -47,6 +47,7 @@ a {
 }
 
 .btn {
+    display: inline-block;
     background: #2E4052;
     border:none;
     border-radius: 5px;
@@ -63,7 +64,7 @@ a {
     border: 2px solid black;
     color: black;
     background: var(--primary-color);
-    width: 500px;    
+    transform: scale(1.2);   
 }
 
 .btn-dark {

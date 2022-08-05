@@ -26,7 +26,7 @@
     width: 100%;
     color: #F0EDEE;
     /* overlay */
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, 0.7)
 }
 
 #showcase .showcase-img {
@@ -35,6 +35,13 @@
 
 .showcase-info {
     text-align: center;
+}
+
+.showcase-info .btn {
+    margin-top: 30px;
+    /* background: white; */
+    border: none;
+    /* color: black; */
 }
 
 .showcase-info h1 {
