@@ -102,7 +102,7 @@
 #features .items .item {
     flex-direction: column;
     height: 500px;
-    padding: 4rem;
+    padding: 2rem;
     max-width: 80%;
     display: none;
     margin-bottom: 2rem;
