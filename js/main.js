@@ -17,9 +17,10 @@ function initMap() {
 window.addEventListener("scroll", () => {
   let navbar = document.getElementById("navbar");
   let links = document.querySelectorAll("#navbar ul li a");
-  if (window.scrollY <= 150) {
+  if (window.scrollY <= 140) {
     // navbar.style.background = "#F0EDEE";
-    navbar.style.background = "#FEF9EF";
+    // navbar.style.background = "#FEF9EF";
+    navbar.style.background = "#f1f0ebf1";
     navbar.style.color = "black";
     links.forEach((link) => {
       link.style.color = "black";

@@ -48,29 +48,53 @@ a {
 
 .btn {
     display: inline-block;
-    background: #2E4052;
     border:none;
     border-radius: 5px;
     color:#F2F4FF;
     padding:1rem;
 }
 
-.btn-rounded {
-    border-radius: 30px;
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-rounded:hover {
-    border: 2px solid black;
-    color: black;
-    background: var(--primary-color);
-    transform: scale(1.2);   
-}
-
 .btn-dark {
     background: black;
     color:white;
 }
+
+
+.btn-rounded {
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    position:relative;
+    background: rgb(65, 64, 64);
+    z-index: 0;
+}
+
+.btn-rounded::after{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0.0, 0.0, 0.0, 0.9);
+    width:100%;
+    height:100%;
+    border-radius: 30px;
+    z-index:-1;
+    transform:scale(0);
+    transition: transform 200ms ease-in-out;
+    transform-origin: bottom;
+}
+
+.btn-rounded:hover::after {
+    transform: scale(1);
+    transform-origin: left;  
+}
+
+/* .btn-rounded:hover {
+    border: 2px solid black;
+    color: black;
+    background: var(--primary-color); 
+} */
+
+
 
 .underline {
     border-bottom: 1px solid black;
@@ -98,7 +122,8 @@ a {
     /* color: var(--primary-color); */
     /* background: black; */
     color: black;
-    background: var(--primary-color);
+    /* background: var(--primary-color); */
+    background:var(--secondary-color);
     z-index: 1;
     justify-content: space-between;
     align-items: center;
@@ -137,6 +162,10 @@ a {
     padding:3rem;
 }
 
+/* #showcase .showcase-img {
+    position:relative;
+} */
+
 #showcase .showcase-img img, 
 #showcase .showcase-img svg{
     height:95%;
@@ -146,6 +175,13 @@ a {
 #showcase .showcase-img svg{
     height: 100%;
     width: 100%;
+    /* position: absolute; */
+    animation: svg-bouncer 6s infinite alternate ease-in-out;
+}
+
+@keyframes svg-bouncer {
+    0% {transform: scale(0.9);}
+    100% {tranform: scale(1.2)}
 }
 
 
@@ -158,7 +194,7 @@ a {
 }
 
 .showcase-info h1 {
-    font-size: 2rem;
+    font-size: 4.5rem;
     margin-bottom: 1.5rem;
 }
 
@@ -168,14 +204,11 @@ a {
     margin-bottom: 1.5rem;
 }
 
-.section h1 {
-    font-size: rem;
-}
 
 /* Section: About */
 
 #about {
-    height: 80vh;
+    height: 90vh;
     color:whitesmoke;
     padding-top:3.5rem;
 }
@@ -204,7 +237,8 @@ a {
 
 /* Section: Features */
 #features {
-    background: linear-gradient(var(--primary-color)0 50%,var(--secondary-color)50% 100%);
+    /* background: linear-gradient(var(--primary-color)0 50%,var(--secondary-color)50% 100%); */
+    background: var(--secondary-color);
     padding: 1rem;
     padding: 5rem 2rem;
     height: 90vh;

@@ -1,8 +1,3 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
 #navbar {
     position: relative;
@@ -58,7 +53,7 @@
 /* About */
 #about {
     min-height: 500px;
-    height: 600px;
+    height: 500px;
     padding:0.5rem;
 }
 
@@ -119,8 +114,7 @@
     transform: translateX(200%);
     line-height: 1.5;
     position: absolute;
-    transition: transform 1.9s ease-in-out;
-    
+    transition: transform 1.9s ease-in-out;   
 }
 
 #features .items .item.active{
@@ -152,7 +146,6 @@
 #features .items .item .img,
 #features .items .item .content{
     width: 100%;
-    
     text-align: center;
 }
 
