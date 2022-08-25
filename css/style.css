@@ -42,7 +42,7 @@ a {
     font-weight: 1000;
     letter-spacing: 10px;
     animation-name: moveInLeft;
-    animation-duration: 3s;
+    animation-duration: 0.7s;
     animation-timing-function: ease-in-out;
 }
 
@@ -63,14 +63,6 @@ a {
 
 }
 
-.lead {
-    font-size: 1rem;
-    line-height: 1.2;
-    margin-bottom:1rem;
-    animation-name: moveInTop;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-}
 
 @keyframes moveInTop {
     0% {
@@ -78,16 +70,24 @@ a {
         transform:translateY(-50px);
     }
 
-    85%{
-        transform:translateX(10px);
-    }
-
     100%{
         opacity: 1;
         transform:translateY(0);
-        transform: translateX(0);
     }
 
+}
+
+@keyframes svg-bouncer {
+    0% {transform: scale(0.9);}
+    100% {tranform: scale(1.2)}
+}
+
+.lead {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom:1rem;
+    animation: moveInTop .7s ease-out .7s;
+    animation-fill-mode: backwards;
 }
 
 
@@ -97,6 +97,16 @@ a {
     border-radius: 5px;
     color:#F2F4FF;
     padding:1rem;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.4);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.4);
 }
 
 .btn-dark {
@@ -208,6 +218,7 @@ a {
     height: 88vh;
     background: var(--secondary-color);
     padding:1.75rem;
+    clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
 }
 #showcase .showcase-content {
     display:flex;
@@ -233,10 +244,7 @@ a {
     animation: svg-bouncer 6s infinite alternate ease-in-out;
 }
 
-@keyframes svg-bouncer {
-    0% {transform: scale(0.9);}
-    100% {tranform: scale(1.2)}
-}
+
 
 
 

@@ -17,6 +17,7 @@ function initMap() {
 window.addEventListener("scroll", () => {
   let navbar = document.getElementById("navbar");
   let links = document.querySelectorAll("#navbar ul li a");
+  let aboutHeader = document.querySelector(".about-info container .l-heading");
   if (window.scrollY <= 140) {
     // navbar.style.background = "#F0EDEE";
     // navbar.style.background = "#FEF9EF";

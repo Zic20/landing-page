@@ -1,9 +1,21 @@
 /* Showcase */
 #showcase {
-    height: 70vh;
+    height: 80vh;
     padding: 2rem;
     align-items: center;
     display: flex;
+}
+
+/* .showcase-info {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position
+    transform: translate(50%,50%);
+} */
+
+#showcase .showcase-img{
+    display: none;
 }
 
 /* Section: About */

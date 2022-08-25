@@ -12,16 +12,16 @@
 #showcase {
     height: 88vh;
     padding: 0;
-    background: url('../img/milad-fakurian-U8BZ0cFrm7Q-unsplash.jpg') no-repeat center center/cover;
+    /* background: url('../img/milad-fakurian-U8BZ0cFrm7Q-unsplash.jpg') no-repeat center center/cover; */
 }
 
 #showcase .showcase-content {
     padding: 0.75rem;
     height: 100%;
     width: 100%;
-    color: #F0EDEE;
+    /* color: #F0EDEE; */
     /* overlay */
-    background: rgba(0, 0, 0, 0.7)
+    /* background: rgba(0, 0, 0, 0.7) */
 }
 
 #showcase .showcase-img {
@@ -52,8 +52,7 @@
 
 /* About */
 #about {
-    min-height: 500px;
-    height: 500px;
+    max-height: 400px;
     padding:0.5rem;
 }
 
@@ -85,15 +84,19 @@
     line-height: 1.5;
     text-align: center;
     overflow: hidden;
+
 }
 
 /* Features */
 #features {
-    height: 1000px;
-    height: 600px;
+    max-height: 700px;
     padding: 0.5rem;
-    padding-top: 40px;
-    overflow-x: hidden;
+    overflow: hidden;
+    clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+}
+
+#features .l-heading {
+    padding-top: 150px;
 }
 
 
@@ -108,8 +111,8 @@
 
 #features .items .item {
     flex-direction: column;
-    height: 500px;
-    padding: 2rem;
+    height: 18rem;
+    padding: 1.5rem;
     max-width: 80%;
     margin-bottom: 2rem;
     transform: translateX(200%);
@@ -132,7 +135,7 @@
     border-radius: 50%;
     padding: 10px;
     position: absolute;
-    top: 360px;
+    top: 19rem;
 }
 
 #features .items .slider#slider-left{
